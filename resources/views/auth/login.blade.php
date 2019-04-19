@@ -27,7 +27,7 @@
                 </div>
                 <input type="submit" class="btn btn-success" value="Đăng Nhập">
                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                {{ __('Forgot Your Password?') }}
+                Quên mật khẩu ?{{-- {{ __('Forgot Your Password?') }} --}}
                 </a>
             </form>
         </div>

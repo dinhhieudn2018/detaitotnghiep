@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>{{ __('Reset Password') }}</h2>
+                        <h2>Lấy lại mật khẩu{{-- {{ __('Reset Password') }} --}}</h2>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
         <form method="POST" action="{{ route('password.email') }}">
             @csrf
             <div class="form-group">
-                <label for="email">{{ __('E-Mail Address') }}</label>
+                <label for="email">Địa chỉ email{{-- {{ __('E-Mail Address') }} --}}</label>
 
                 <div>
                     <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -37,7 +37,7 @@
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">
-                    {{ __('Send Password Reset Link') }}
+                    Gửi liên kết đặt lại mật khẩu{{-- {{ __('Send Password Reset Link') }} --}}
                 </button>
             </div>
         </form>

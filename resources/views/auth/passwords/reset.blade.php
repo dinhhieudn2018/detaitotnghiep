@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>{{ __('Reset Password') }}</h2>
+                        <h2>Lấy lại mật khẩu{{-- {{ __('Reset Password') }} --}}</h2>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,6 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.request') }}">
                         @csrf
-
                         <input type="hidden" name="token" value="{{ $token }}">
 
                         <div class="form-group row">
